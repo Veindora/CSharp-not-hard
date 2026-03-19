@@ -1,40 +1,48 @@
-# SIT232 Practical Task 1.2P: Repetition and Control Structures
+# SIT232 Practical Tasks 1.1P & 1.2P: Selection, Casting, and Repetition
 
-This project contains the implementation of Practical Task 1.2 for SIT232 (Object-Oriented Development). The focus of this task is on mastering C# repetition structures (`for`, `while`, and `do...while` loops) and understanding their appropriate use cases.
+This repository contains the implementation of Practical Tasks 1.1P and 1.2P for SIT232 (Object-Oriented Development). These tasks focus on C# control structures, including selection (`if`, `switch`), casting, and repetition (`for`, `while`, `do...while` loops).
 
 ## Project Structure
 
-### Root Directory
-- **`Repetition.cs`**: Implements Tasks 1, 2, and 3. It calculates the sum and average of numbers 1 to 100 using all three loop types, including trace statements for observation.
-- **`DebuggingAndRewriting.cs`**: Implements the consolidated logic for Task 4 (debugging) and Task 5 (rewriting `while` loops as `for` loops).
-- **`GuessingNumber.cs`**: A two-player number guessing game with input validation and range checking (Task 6).
-- **`DivisibleFour.cs`**: A program that finds numbers divisible by 4 but not by 5 up to a user-defined limit (Task 7).
-- **`analyze.md`**: Contains theoretical answers regarding loop differences and a detailed breakdown of the bugs found in Task 4.
-- **`1.2P_request.pdf`**: The original task requirements.
+### Practical Task 1.1P: Selection and Casting (`selection_and_casting/`)
+- **`IfStatement/`**: Implementation of Task 1, converting numbers 1-9 to words using `if-else` blocks.
+- **`SwitchStatement/`**: Implementation of Task 2, using `switch` statements for the same number-to-word conversion.
+- **`Microwave/`**: Task 5, calculating heating times based on the number of items.
+- **`DoCasting/`**: Task 6, demonstrating explicit casting and its effect on division results.
+- **`Analysis.md`**: Detailed analysis and fixes for the Task 3 and 4 code snippets.
+- **`task/`**: Standalone fixed C# files for the debugging snippets in Tasks 3 and 4 (`Snippet1.cs` to `Snippet8.cs`).
 
-### `task/` Folder
-Contains standalone C# files for each debugging snippet from Task 4, fixed and ready for individual execution:
-- `Snippet1.cs` to `Snippet7.cs`
+### Practical Task 1.2P: Repetition (`repetition/`)
+- **`Repetition.cs`**: Implements Tasks 1, 2, and 3. Calculates the sum and average of numbers 1 to 100 using all three loop types.
+- **`DebuggingAndRewriting.cs`**: Implements logic for Task 4 (debugging) and Task 5 (rewriting `while` loops as `for` loops).
+- **`GuessingNumber.cs`**: A two-player number guessing game with input validation (Task 6).
+- **`DivisibleFour.cs`**: Finds numbers divisible by 4 but not by 5 up to a user limit (Task 7).
+- **`analyze.md`**: Theoretical answers regarding loop differences and a breakdown of Task 4 bugs.
+- **`task/`**: Standalone fixed C# files for the debugging snippets in Task 4 (`Snippet1.cs` to `Snippet7.cs`).
 
 ## Repository Structure
 
 ```text
 .
-├── 1.2P_request.pdf          # Original task requirements
-├── analyze.md                # Detailed loop analysis and debugging fixes
-├── DebuggingAndRewriting.cs  # Consolidated logic for Task 4 & 5
-├── DivisibleFour.cs          # Task 7 implementation
-├── GuessingNumber.cs         # Task 6 implementation
+├── 1.1P_request.pdf          # Task 1.1P requirements
+├── 1.2P_request.pdf          # Task 1.2P requirements
 ├── README.md                 # Project documentation
-├── Repetition.cs             # Tasks 1, 2, & 3 implementations
-└── task/                     # Standalone fixed debugging snippets
-    ├── Snippet1.cs
-    ├── Snippet2.cs
-    ├── Snippet3.cs
-    ├── Snippet4.cs
-    ├── Snippet5.cs
-    ├── Snippet6.cs
-    └── Snippet7.cs
+├── selection_and_casting/    # Task 1.1P implementation
+│   ├── Analysis.md           # Analysis for Task 3 & 4
+│   ├── DoCasting/
+│   ├── IfStatement/
+│   ├── Microwave/
+│   ├── SwitchStatement/
+│   └── task/                 # Fixed debugging snippets (Task 3 & 4)
+│       ├── Snippet1.cs to Snippet8.cs
+└── repetition/               # Task 1.2P implementation
+    ├── analyze.md            # Analysis for Task 4
+    ├── DebuggingAndRewriting.cs
+    ├── DivisibleFour.cs
+    ├── GuessingNumber.cs
+    ├── Repetition.cs
+    └── task/                 # Fixed debugging snippets (Task 4)
+        ├── Snippet1.cs to Snippet7.cs
 ```
 
 ## Highlights & Key Takeaways
@@ -44,7 +52,7 @@ Contains standalone C# files for each debugging snippet from Task 4, fixed and r
 > [!IMPORTANT]
 > All user inputs are validated using **`int.TryParse`**. This prevents the application from crashing if a user enters non-numeric text, ensuring a robust and user-friendly experience.
 
-> [!QUESTION]
+> [!TIP]
 > **What is the fundamental difference between a `while` and a `for` loop?**
 > A `for` loop is most effective when the number of iterations is known (fixed-count), while a `while` loop is better suited for condition-based iterations where the count is not predetermined.
 
