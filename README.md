@@ -26,8 +26,10 @@ This repository contains a comprehensive collection of practical tasks for **SIT
 
 >[!NOTE]
 >**Encapsulation**: The `Account` class uses private fields (`_balance`, `_name`) to ensure data integrity. Only controlled access is allowed through public methods and properties.
+
 >[!IMPORTANT]
 >**Defensive Programming**: All critical operations (Deposit/Withdraw) now validate inputs. Never assume a user will provide a positive number or have sufficient funds; always validate before mutating state.
+
 >[!BUG]
 >**Silent Failures Fixed**: In early versions, `Withdraw` would simply do nothing if the balance was too low. This was refactored to throw an `InvalidOperationException`, ensuring the caller is aware of the failure and can handle it appropriately using `try-catch` blocks.
 
