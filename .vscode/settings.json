@@ -21,14 +21,14 @@
         "**/obj": true
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "csharp.unitTestDebuggingOptions": {
-        "stopAtEntry": false
-    },
     "omnisharp.enableRoslynAnalyzers": true,
-    "omnisharp.organizeImportsOnFormat": true,
     "editor.rulers": [
         120
     ],
     "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "dotnet.unitTestDebuggingOptions": {
+        "stopAtEntry": false
+    },
+    "dotnet.formatting.organizeImportsOnFormat": true
 }
